@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — SkillBridge Africa</title>
+  <link rel="stylesheet" href="./pure-css-glassmorphism-liquid-glass-ui-kit/src/style.css">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav site-container" aria-label="Main navigation">
+      <a href="./pages/index.html" class="site-nav__logo">
+        <img src="./assets/images/skill-bridge-logo.jpeg" alt="SkillBridge Africa logo">
+        SkillBridge Africa
+      </a>
+      <button class="site-nav__toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <ul class="site-nav__links" id="main-nav" role="list">
+        <li><a href="./pages/index.html">Home</a></li>
+        <li><a href="./pages/courses.html">Courses</a></li>
+        <li><a href="./pages/mentorship.html">Mentorship</a></li>
+        <li><a href="./pages/about.html">About</a></li>
+        <li><a href="./pages/contact.html">Contact</a></li>
+      </ul>
+      <div class="site-nav__actions">
+        <button class="glass glass-btn theme-toggle-btn" id="theme-toggle" aria-label="Toggle colour scheme">
+          <span class="icon-dark" aria-hidden="true">☀️</span>
+          <span class="icon-light" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="site-container not-found">
+      <div class="not-found__code" aria-hidden="true">404</div>
+      <h1>Page Not Found</h1>
+      <p style="color:var(--text-secondary);margin-block:1rem 2rem;">The page you're looking for doesn't exist or has been moved.</p>
+      <a href="./pages/index.html" class="glass glass-btn glass-btn--primary">← Back to Home</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <a href="./pages/index.html" class="site-nav__logo">
+            <img src="./assets/images/skill-bridge-logo.jpeg" alt="">
+            SkillBridge Africa
+          </a>
+          <p>Bridging the skills gap across Africa.</p>
+        </div>
+        <ul class="site-footer__links" role="list">
+          <li><a href="./pages/index.html">Home</a></li>
+          <li><a href="./pages/courses.html">Courses</a></li>
+          <li><a href="./pages/mentorship.html">Mentorship</a></li>
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <p class="site-footer__copy">© 2026 SkillBridge Africa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./pure-css-glassmorphism-liquid-glass-ui-kit/src/script.js" defer></script>
+  <script>
+    document.querySelector('.site-nav__toggle')?.addEventListener('click', function() {
+      const nav = document.getElementById('main-nav');
+      this.setAttribute('aria-expanded', nav.classList.toggle('is-open'));
+    });
+  </script>
+</body>
+</html>

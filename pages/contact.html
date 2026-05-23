@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — SkillBridge Africa</title>
+  <link rel="stylesheet" href="../pure-css-glassmorphism-liquid-glass-ui-kit/src/style.css">
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav site-container" aria-label="Main navigation">
+      <a href="index.html" class="site-nav__logo">
+        <img src="../assets/images/skill-bridge-logo.jpeg" alt="SkillBridge Africa logo">
+        SkillBridge Africa
+      </a>
+      <button class="site-nav__toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <ul class="site-nav__links" id="main-nav" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="mentorship.html">Mentorship</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+      <div class="site-nav__actions">
+        <button class="glass glass-btn theme-toggle-btn" id="theme-toggle" aria-label="Toggle colour scheme">
+          <span class="icon-dark" aria-hidden="true">☀️</span>
+          <span class="icon-light" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <div class="site-container">
+
+      <div class="page-header">
+        <h1 class="page-header__title">Get in Touch</h1>
+        <p class="page-header__sub">Have a question, want to partner with us, or ready to apply for mentorship? We'd love to hear from you.</p>
+      </div>
+
+      <section aria-labelledby="form-title">
+        <h2 class="glass-sr-only" id="form-title">Contact Form</h2>
+
+        <!-- Success message (shown after submission) -->
+        <div class="glass glass-card form-success" id="form-success" role="alert" aria-live="polite">
+          <div style="font-size:3rem;margin-bottom:1rem;" aria-hidden="true">✅</div>
+          <h3 style="margin-bottom:.5rem;">Message Sent!</h3>
+          <p style="color:var(--text-secondary);">Thank you for reaching out. We'll get back to you within 2 business days.</p>
+        </div>
+
+        <form
+          class="glass glass-card contact-form"
+          id="contact-form"
+          action="https://formspree.io/f/{YOUR_FORM_ID}"
+          method="POST"
+          novalidate
+        >
+          <div class="form-field" id="field-name">
+            <label for="name">Full Name <span aria-hidden="true">*</span></label>
+            <input
+              class="glass-input"
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+              aria-required="true"
+              aria-describedby="name-error"
+              placeholder="e.g. Amara Diallo"
+            >
+            <span class="form-field__error" id="name-error" role="alert">Please enter your full name.</span>
+          </div>
+
+          <div class="form-field" id="field-email">
+            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+            <input
+              class="glass-input"
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              aria-required="true"
+              aria-describedby="email-error"
+              placeholder="e.g. amara@example.com"
+            >
+            <span class="form-field__error" id="email-error" role="alert">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-field" id="field-message">
+            <label for="message">Message <span aria-hidden="true">*</span></label>
+            <textarea
+              class="glass-input"
+              id="message"
+              name="message"
+              rows="5"
+              required
+              aria-required="true"
+              aria-describedby="message-error"
+              placeholder="Tell us how we can help…"
+              style="resize:vertical;"
+            ></textarea>
+            <span class="form-field__error" id="message-error" role="alert">Please enter your message.</span>
+          </div>
+
+          <button type="submit" class="glass glass-btn glass-btn--primary" style="align-self:flex-start;">
+            Send Message
+          </button>
+        </form>
+
+        <!-- Alternative contact -->
+        <div style="text-align:center;margin-top:2rem;color:var(--text-secondary);font-size:var(--text-sm);">
+          <p>Prefer email? Reach us directly at <a href="mailto:hello@skillbridgeafrica.com" style="color:var(--accent-aqua);">hello@skillbridgeafrica.com</a></p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <a href="index.html" class="site-nav__logo">
+            <img src="../assets/images/skill-bridge-logo.jpeg" alt="">
+            SkillBridge Africa
+          </a>
+          <p>Bridging the skills gap across Africa through quality education, mentorship, and career opportunities.</p>
+        </div>
+        <ul class="site-footer__links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="mentorship.html">Mentorship</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="site-footer__links" role="list" aria-label="Social media">
+          <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+          <li><a href="#" aria-label="Twitter/X">Twitter/X</a></li>
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        </ul>
+      </div>
+      <p class="site-footer__copy">© 2026 SkillBridge Africa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../pure-css-glassmorphism-liquid-glass-ui-kit/src/script.js" defer></script>
+  <script>
+    // Mobile nav
+    document.querySelector('.site-nav__toggle')?.addEventListener('click', function() {
+      const nav = document.getElementById('main-nav');
+      this.setAttribute('aria-expanded', nav.classList.toggle('is-open'));
+    });
+
+    // Form validation + success handling
+    const form = document.getElementById('contact-form');
+    const success = document.getElementById('form-success');
+
+    function validateField(input) {
+      const field = input.closest('.form-field');
+      const valid = input.checkValidity();
+      field.classList.toggle('form-field--invalid', !valid);
+      return valid;
+    }
+
+    form?.querySelectorAll('input, textarea').forEach(input => {
+      input.addEventListener('blur', () => validateField(input));
+    });
+
+    form?.addEventListener('submit', function(e) {
+      let valid = true;
+      this.querySelectorAll('input, textarea').forEach(input => {
+        if (!validateField(input)) valid = false;
+      });
+      if (!valid) { e.preventDefault(); return; }
+
+      // Show success if Formspree redirects back (or handle via fetch for SPA-style)
+      // For standard POST redirect, Formspree handles the thank-you page.
+      // Uncomment below for fetch-based submission without page reload:
+      /*
+      e.preventDefault();
+      fetch(this.action, { method: 'POST', body: new FormData(this), headers: { Accept: 'application/json' } })
+        .then(r => { if (r.ok) { form.style.display = 'none'; success.classList.add('is-visible'); } });
+      */
+    });
+  </script>
+</body>
+</html>
